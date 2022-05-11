@@ -70,20 +70,18 @@ const Home = () => {
   const dataItem = getData();
 
   return (
-    <div className="content-wrapper">
-      <div className="container position-relative">
-        <Card
-          header={"Buttons"}
-          description={
-            <div className="container-sm">
-              {dataItem.map((item, i) => (
-                <span key={i}>{item}</span>
-              ))}
-            </div>
-          }
-        />
-      </div>
-    </div>
+    <>
+      <Card
+        header={"Buttons"}
+        description={
+          <div className="container-sm">
+            {dataItem.map((item, i) => (
+              <span key={i}>{item}</span>
+            ))}
+          </div>
+        }
+      />
+    </>
   );
 };
 
