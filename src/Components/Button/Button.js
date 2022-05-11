@@ -40,8 +40,8 @@ export const Button = ({
   classes = classes.join(" ");
 
   return (
-    <div className="col-3">
-      <button {...rest} type={type} className={`btn ${classes} ${className}`}>
+    <div className="col">
+      <button {...rest} type={type} className={`${classes} ${className}`}>
         {children}
       </button>
     </div>
