@@ -24,6 +24,7 @@ const getData = () => {
           children={"Button"}
           buttonType="outline"
           button="warning"
+          size="sm"
         />
 
         <Button
@@ -31,6 +32,7 @@ const getData = () => {
           children={"Button"}
           buttonType="outline"
           button="danger"
+          size="lg"
         />
       </div>
 
@@ -53,12 +55,14 @@ const getData = () => {
           children={"Button"}
           buttonType="filled"
           button="warning"
+          size="sm"
         />
         <Button
           type="button"
           children={"Button"}
           buttonType="filled"
           button="danger"
+          size="lg"
         />
       </div>
     </>,
