@@ -1,101 +1,13 @@
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 body {
   margin: 0;
-  font-family: " Helvetica", "Arial", "sans-serif";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f2f2f2;
 }
 
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 7px;
-  height: 7px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-  display: block;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgb(87, 87, 87);
-  border-radius: 10px;
-  display: block;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(87, 87, 87);
-  display: block;
-}
-
-.card {
-  border: none;
-  border-radius: 10px;
-}
-
-.c-details span {
-  font-weight: 300;
-  font-size: 13px;
-}
-
-.icon {
-  width: 50px;
-  height: 50px;
-  background-color: #eee;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 39px;
-}
-
-.badge {
-  background-color: #fcf7e3;
-  width: fit-content;
-  height: fit-content;
-  padding-bottom: 3px;
-  border-radius: 5px;
-}
-.badge span {
-  padding-bottom: 3px;
-  border-radius: 5px;
-  display: flex;
-  color: #fed85d;
-  justify-content: center;
-  align-items: center;
-}
-
-.progress {
-  height: 10px;
-  border-radius: 10px;
-}
-
-.progress div {
-  background-color: red;
-}
-
-.text1 {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.text2 {
-  color: #a5aec0;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
