@@ -1,2 +1,17 @@
 /** Buttons  **/
- 
+
+/** Card  **/
+.card {
+    border: solid;
+    border-radius: 2px;
+}
+
+.border {
+    border: solid;
+}
+.border-top {
+    border-top: solid;
+}
+.border-bottom {
+    border-bottom: solid;
+}
