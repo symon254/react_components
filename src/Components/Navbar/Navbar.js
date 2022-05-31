@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import routes from "../../Routes/Routes";
 import Unsplash from "../../Assets/Img/unsplash.jpg";
-
+import "../../Assets/styles.css";
 export const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary  d-flex flex-column flex-md-row align-items-center pb-3 mb-4">
@@ -37,18 +37,22 @@ export const Navbar = () => {
                     <ul className="navbar-nav">
                         {routes.map((route, i) => (
                             <li key={i} className="nav-item">
-                                <NavLink
-                                    key={i}
-                                    to={route.path}
-                                    style={({ isActive }) => ({
-                                        color: isActive ? "red" : "white",
-                                    })}
-                                    className={({ isActive }) =>
-                                        `nav-link ${isActive ? "active" : ""}`
-                                    }
-                                >
-                                    {route.name}
-                                </NavLink>
+                                <button className="navbutton">
+                                    <NavLink
+                                        key={i}
+                                        to={route.path}
+                                        style={({ isActive }) => ({
+                                            color: isActive ? "red" : "white",
+                                        })}
+                                        className={({ isActive }) =>
+                                            `nav-link ${
+                                                isActive ? "active" : ""
+                                            }`
+                                        }
+                                    >
+                                        {route.name}
+                                    </NavLink>
+                                </button>
                             </li>
                         ))}
                     </ul>

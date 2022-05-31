@@ -1,23 +1,20 @@
 import React from "react";
 
-const Cards = ({ header, description }) => {
+const Cards = ({ header, description, icon }) => {
     return (
         <>
             <>
-                <div className="card rounded-5 p-3 mb-2">
+                <div className="card">
                     <div className="d-flex justify-content-between">
                         <div className="d-flex flex-row align-items-center">
-                            <div className="icon">
-                                <i className="bx bxl-dribbble" />
-                            </div>
-                            <div className="ms-2 c-details">
-                                <h4 className="mb-0">{header}</h4>
-                            </div>
+                            <div className="icon">{icon}</div>
+                            <div className="header">{header}</div>
                         </div>
                         <div className="badge">
                             <span className="px-1">Components</span>
                         </div>
                     </div>
+
                     <div className="mt-4">
                         <h3 className="heading">{description}</h3>
                     </div>

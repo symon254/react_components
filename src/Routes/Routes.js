@@ -1,27 +1,36 @@
+//import React from "react";
+import { AiTwotoneHome, AiTwotoneCompass } from "react-icons/ai";
+
 const routes = [
     {
         name: "Home",
         path: "/",
-        icon: "bx bx-user",
+        icon: <AiTwotoneHome />,
+        cName: "item-tab",
     },
     {
         name: "Page A",
         path: "/pageA",
-        icon: "bx bx-package",
+        icon: <AiTwotoneCompass />,
+        cName: "item-tab",
     },
     {
         name: "Page B",
         path: "/pageB",
-        icon: "bx bx-bar-chart-alt",
+        icon: <AiTwotoneCompass />,
+        cName: "item-tab",
     },
     {
         name: "Page C",
         path: "/pageC",
-        icon: "bx bx-bar-chart-alt",
-    },{
+        icon: <AiTwotoneCompass />,
+        cName: "item-tab",
+    },
+    {
         name: "Page D",
         path: "/pageD",
-        icon: "bx bx-bar-chart-alt",
+        icon: <AiTwotoneCompass />,
+        cName: "item-tab",
     },
 ];
 

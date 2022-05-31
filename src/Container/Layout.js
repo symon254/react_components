@@ -1,12 +1,14 @@
 import React, { Suspense } from "react";
 import { Route, Routes, red } from "react-router-dom";
-import { Navbar } from "../Components/Navbar/Navbar";
+//import { Navbar } from "../Components/Navbar/Navbar";
+import SideBar from "../Components/Navbar/Navsidebar";
 import screens from "../Routes";
 
 const layout = () => {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
+            <SideBar />
             <div className="content-wrapper">
                 <div className="container mt-5 mb-3">
                     <Routes>

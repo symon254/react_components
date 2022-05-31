@@ -84,7 +84,7 @@ const PageB = () => {
 
     return (
         <>
-            <div className="content-wrapper  ">
+            <div className="content-wrapper " style={{ marginLeft: "100px" }}>
                 <div className="container"></div>
                 <div className="container">
                     <div className="row">

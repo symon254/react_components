@@ -2,7 +2,7 @@ import React from "react";
 
 const PageA = () => {
     return (
-        <div className="row">
+        <div className="row" style={{ marginLeft: "100px" }}>
             <div className="col-md-6">
                 <div className="card rounded-5 p-3 mb-2">
                     <div className="d-flex justify-content-between">

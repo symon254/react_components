@@ -20,7 +20,6 @@ export const Input = ({
                     id={id}
                     className={`${className} form-control`}
                 />
-                ;
             </label>
         </>
     );

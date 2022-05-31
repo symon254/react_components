@@ -22,7 +22,8 @@ const screens = [
     {
         component: PageC,
         path: "/PageC",
-    },{
+    },
+    {
         component: PageD,
         path: "/PageD",
     },
