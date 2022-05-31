@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { Button } from "../Button/Button";
 
 const tableFill = {
     primary: "table-primary",
@@ -32,16 +33,17 @@ export const Table = ({
             </td>
         );
     };
-    const TableRow = ({ data }) => {
+    const TableRow = ({ data, buttons }) => {
         return (
             <tr>
                 {data.map((item) => {
                     return <td key={item}>{item}</td>;
                 })}
+                <td key="button">{buttons}</td>
             </tr>
         );
     };
-    const thData = ["name", "email", "date"];
+    const thData = ["name", "email", "date", "Actions"];
     const tbData = [
         {
             id: "1",
@@ -56,6 +58,14 @@ export const Table = ({
             items: ["sydo", "sydo@gmail.com", "01/01/2022"],
         },
     ];
+
+    const [list, updateList] = useState(tbData);
+
+    const handleRemoveItem = (e) => {
+        const id = e.target.getAttribute("id");
+        updateList(list.filter((item) => item.id !== id));
+        console.log("del");
+    };
 
     let classes = [];
 
@@ -79,7 +89,28 @@ export const Table = ({
                 </thead>
                 <tbody>
                     {tbData.map((item, id) => {
-                        return <TableRow key={id} data={item.items} />;
+                        return (
+                            <TableRow
+                                key={id}
+                                data={item.items}
+                                buttons={
+                                    <div style={{ display: "flex" }}>
+                                        <Button
+                                            id={item.id}
+                                            type="button"
+                                            children={
+                                                <div>
+                                                    <i className="bx bxl-mailchimp" />
+                                                </div>
+                                            }
+                                            buttonType="outline"
+                                            button="primary"
+                                            onClick={handleRemoveItem}
+                                        />
+                                    </div>
+                                }
+                            />
+                        );
                     })}
                 </tbody>
             </table>

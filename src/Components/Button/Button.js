@@ -30,6 +30,7 @@ export const Button = ({
     size,
     button,
     buttonType,
+    icon,
     ...rest
 }) => {
     let classes = [];
@@ -60,6 +61,7 @@ export const Button = ({
                 type={type}
                 className={`btn ${classes} ${className}`}
             >
+                {icon}
                 {children}
             </button>
         </div>

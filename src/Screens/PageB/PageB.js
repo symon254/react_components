@@ -8,7 +8,7 @@ import {
     Select,
     Input,
 } from "../../Components/Input/Input";
-import { Table } from "../../Components/Table/Table";
+import { Table } from "../../Components/Table/test";
 import { Alert } from "../../Components/Alert/Alert";
 
 import { BsInfoCircleFill, BsExclamationTriangleFill } from "react-icons/bs";
